@@ -6,5 +6,9 @@ export const appRoutes = {
     REGISTRATION: {
         name: "registration",
         path: "/registration",
+    },
+    MAIN_LAYOUT: {
+        name: "main",
+        path: "/main",
     }
 };

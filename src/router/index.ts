@@ -13,6 +13,11 @@ const router = createRouter({
       path: appRoutes.REGISTRATION.path,
       name: "registration",
       component: () => import("@/views/RegistrationPage.vue")
+    },
+    {
+      path: appRoutes.MAIN_LAYOUT.path,
+      name: "main",
+      component: () => import("@/views/MainLayout.vue")
     }
   ]
 })
