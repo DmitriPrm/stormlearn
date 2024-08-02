@@ -4,7 +4,7 @@ export const MenuLayoutConfig = [
     {
         title: "Главная",
         active: true,
-        path: appRoutes.HOME.path,
+        path: appRoutes.MAIN.path,
     },
     {
         title: "Курсы",

@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import("@/views/MainLayout.vue"),
       children: [
         {
+          path: appRoutes.MAIN.path,
+          name: appRoutes.MAIN.name,
+          component: () => import("@/views/MainPage.vue"),
+        },
+        {
           path: appRoutes.COURSES.path,
           name: appRoutes.COURSES.name,
           component: () => import("@/views/CoursesPage.vue")
