@@ -8,7 +8,7 @@
         class="left-menu__menu-item"
         :class="{'left-menu__menu-item--active': menuItem.active}"
       >
-        {{ menuItem.title }}
+        <router-link class="left-menu__link" :to="menuItem.path">{{ menuItem.title }}</router-link>
       </li>
     </ul>
   </div>
@@ -31,13 +31,21 @@ import {MenuLayoutConfig} from "@/shared/lib/helpers/menu/menu-layout";
     list-style: none;
     padding: 0;
   }
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
   &__menu-item {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width: 100%;
     padding: 0.5rem 0;
     cursor: pointer;
     font-size: 1.25rem;
+    a {
+      color: white;
+      text-decoration: none;
+    }
     &--active {
       background-color: #0149B4;
     }

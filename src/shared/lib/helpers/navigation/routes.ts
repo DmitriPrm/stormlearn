@@ -10,5 +10,17 @@ export const appRoutes = {
     MAIN_LAYOUT: {
         name: "main",
         path: "/main",
+    },
+    COURSES: {
+        name: "courses",
+        path: "/main/courses"
+    },
+    STATISTICS: {
+        name: "statistics",
+        path: "/main/statistics",
+    },
+    CALENDAR: {
+        name: "calendar",
+        path: "/main/calendar",
     }
 };
